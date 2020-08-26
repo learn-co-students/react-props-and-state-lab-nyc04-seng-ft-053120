@@ -71,6 +71,7 @@ describe('<Pet />', () => {
     describe('Pet is not adopted yet', () => {
       it('should only show the adopt button', () => {
         const wrapper = shallow(<Pet pet={FEMALE_CAT} />);
+        console.log(wrapper.html())
         expect(
           wrapper.find('button.ui.primary.button').length === 1 &&
             wrapper.find('button.ui.disabled.button').length === 0
