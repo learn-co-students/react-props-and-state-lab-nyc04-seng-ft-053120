@@ -19,7 +19,7 @@ creating a UI in React!
 We **strongly** recommend completing this lab using Behavior Driven Development
 (BDD)––test the functionality in the browser **before** running the tests.
 You'll have a much better time seeing the results in the browser.
-
+n
 Call `npm i && npm start` to run this project in your browser
 
 ## Deliverables
@@ -46,17 +46,17 @@ descendants:
 
 ### `App`
 
-1.  The app's initial state is already defined. App has two children: the
-    `<Filters />` and `<PetBrowser />` components.
+<!-- 1.  The app's initial state is already defined. App has two children: the
+    `<Filters />` and `<PetBrowser />` components. -->
 
-2. App should pass a **callback** prop, `onChangeType`, to `<Filters />`. This
-   callback needs to update `<App />`'s `state.filters.type`
+<!-- 2. App should pass a **callback** prop, `onChangeType`, to `<Filters />`. This
+   callback needs to update `<App />`'s `state.filters.type` -->
+<!-- 
+3. `<Filters />` needs a **callback** prop, `onFindPetsClick`. When the -->
+   <!-- `<Filters />` component calls `onFindPetsClick`, `<App />` should fetch a
+   list of pets using `fetch()`. -->
 
-3. `<Filters />` needs a **callback** prop, `onFindPetsClick`. When the
-   `<Filters />` component calls `onFindPetsClick`, `<App />` should fetch a
-   list of pets using `fetch()`.
-
-  - Assuming your app is up and running, you can make a fetch to this exact URL:
+  <!-- - Assuming your app is up and running, you can make a fetch to this exact URL:
     `/api/pets` with an **optional query parameter** to get your data.
   - Use `App`'s state.filters to control/update this parameter
   - If the `type` is `'all'`, send a request to `/api/pets`
@@ -74,23 +74,23 @@ descendants:
 
 5. Finally, App should pass a **callback** prop, `onAdoptPet`, to `<PetBrowser
    />`. This callback should take in an id for a pet, find the matching pet in
-   `state.pets` and set the `isAdopted` property to `true`.
+   `state.pets` and set the `isAdopted` property to `true`. -->
 
 ### `Filters`
 
-1.  Should receive an `onChangeType` callback prop. This callback prop gets
+<!-- 1.  Should receive an `onChangeType` callback prop. This callback prop gets
     called whenever the value of the `<select>` element changes with the
-    **value** of the `<select>`
+    **value** of the `<select>` -->
 
-2.  Should receive an `onFindPetsClick` callback prop. This callback prop gets
-    called when the users clicks the 'Find pets' button.
+<!-- 2.  Should receive an `onFindPetsClick` callback prop. This callback prop gets
+    called when the users clicks the 'Find pets' button. -->
 
 ### `PetBrowser`
-
+<!-- 
 1.  Should receive a `pets` prop. This is an array of pets that the component
     uses to render `<Pet />` components. App should determine which pets to pass
     down as props. App should be responsible for filtering this list based on
-    the types of pets the user wants to see.
+    the types of pets the user wants to see. -->
 
 2.  Should receive an `onAdoptPet` prop. This callback prop gets passed to its
     `<Pet />` children components.
